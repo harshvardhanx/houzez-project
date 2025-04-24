@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="slick/slick.css" />
+    <script src="slick/slick.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="preheader ps-5">
+        <div class="container-xl content d-flex align-items-center">
+          <a
+            href="tel:+918171696882"
+            class="pre_anchor d-flex align-items-center"
+          >
+            <span class="pre_telephone">(+91)8171-696882</span>
+            <!-- <img src="" alt="telephonesvg" class="telephone_svg"> -->
+          </a>
+          <a href="mailto:houzez@favethemes.com" class="pre_anchor ms-5">
+            <span class="pre_mail">houzez@favethemes.com</span>
+            <!-- <img src="" alt="emailsvg" class="email_svg"> -->
+          </a>
+        </div>
+      </div>
+
+      <div class="header_content">
+        <div
+          class="container-xl d-flex justify-content-between align-items-center"
+        >
+          <div class="logo_container d-flex align-items-center">
+            <img src="images/logo.svg" alt="logoimage" class="logo_image" />
+            <span class="logo_text">houzez</span>
+          </div>
+
+          <div class="nav_container">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FOR RENT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FOR SALE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">OUR AGENTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="herosection_container">
+        <div class="herosection_overlay">
+          <div
+            class="herosection_title"
+            data-aos="fade-zoom-in-up"
+            data-aos-duration="2000"
+          >
+            <h2 class="hero_title">Discover your place to live</h2>
+            <p class="hero_desc p-2">Get started in few clicks</p>
+            <div class="hero_menus">
+              <button type="button" class="btn btn-dark all">All</button>
+              <button type="button" class="btn btn-success one">
+                For Rent
+              </button>
+              <button type="button" class="btn btn-success one">
+                For Sale
+              </button>
+            </div>
+
+            <div
+              class="hero_seachbar d-flex justify-content-center align-items-center p-3"
+              data-aos="fade-zoom-in-up"
+              data-aos-duration="2000"
+            >
+              <input
+                list="cities"
+                name="city"
+                id="city"
+                placeholder="all-cities"
+                class="herosection_datalist"
+              />
+
+              <datalist id="cities">
+                <option value="Uttarakhand"></option>
+                <option value="Uttar Pradesh"></option>
+                <option value="Delhi"></option>
+                <option value="Madhya Pradesh"></option>
+                <option value="Maharashtra"></option>
+              </datalist>
+
+              <input
+                type="text"
+                class="form-control d-inline p-2 ms-2"
+                placeholder="Enter Keyword"
+              />
+              <button class="herosection_button_search" type="button">
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="container-md d-flex flex-column align-items-center justify-content-center mt-5"
+      >
+        <div class="feature_heading">
+          <h2 class="featureheading_title mb-4">Our Featured Exclusives</h2>
+          <p class="Featureheading_desc">
+            Choose from different listing templates and lay them out as lists or
+            grids, full-width or boxed
+          </p>
+        </div>
+
+        <div class="featurecard_gird">
+          <div class="featuregrid_content">
+            <div class="feature_image_container">
+              <img
+                src="images/card1.webp"
+                alt="Modern day apartment"
+                class="featuregrid_image"
+              />
+              <h3 class="featurecard_title">Modern day apartment</h3>
+            </div>
+            <div class="featuredesc_container">
+              <span class="featuredesc_1">$3,750/mo</span>
+              <span class="featuredesc_2">Apartment</span>
+            </div>
+            <div class="featurecard_footer">
+              <span class="amenities1"> <i class="fa-solid fa-bed"></i> 4</span>
+              <span class="amenities2">
+                <i class="fa-solid fa-shower"></i> 2</span
+              >
+              <span class="amenities3">
+                <i class="fa-solid fa-car-side"></i> 1</span
+              >
+              <span class="amenities4">
+                <i class="fa-solid fa-pen-ruler"></i> 1200 msq.</span
+              >
+            </div>
+          </div>
+
+          <div class="featuregrid_content">
+            <div class="feature_image_container">
+              <img
+                src="images/card2.webp"
+                alt="Oceanfront apartment"
+                class="featuregrid_image"
+              />
+              <h3 class="featurecard_title">Oceanfront Apartment</h3>
+            </div>
+            <div class="featuredesc_container">
+              <span class="featuredesc_1">$1,890/mo</span>
+              <span class="featuredesc_2">Apartment</span>
+            </div>
+            <div class="featurecard_footer">
+              <span class="amenities1"> <i class="fa-solid fa-bed"></i> 4</span>
+              <span class="amenities2">
+                <i class="fa-solid fa-shower"></i> 2</span
+              >
+              <span class="amenities3">
+                <i class="fa-solid fa-car-side"></i> 1</span
+              >
+              <span class="amenities4">
+                <i class="fa-solid fa-pen-ruler"></i> 1200 msq.</span
+              >
+            </div>
+          </div>
+
+          <div class="featuregrid_content">
+            <div class="feature_image_container">
+              <img
+                src="images/card3.webp"
+                alt="Guaranteed Modern Home"
+                class="featuregrid_image"
+              />
+              <h3 class="featurecard_title">Guaranteed Modern Home</h3>
+            </div>
+            <div class="featuredesc_container">
+              <span class="featuredesc_1">$590,000</span>
+              <span class="featuredesc_2">Single Family Home</span>
+            </div>
+            <div class="featurecard_footer">
+              <span class="amenities1"> <i class="fa-solid fa-bed"></i> 4</span>
+              <span class="amenities2">
+                <i class="fa-solid fa-shower"></i> 2</span
+              >
+              <span class="amenities3">
+                <i class="fa-solid fa-car-side"></i> 1</span
+              >
+              <span class="amenities4">
+                <i class="fa-solid fa-pen-ruler"></i> 1200 msq.</span
+              >
+            </div>
+          </div>
+
+          <div class="featuregrid_content">
+            <div class="feature_image_container">
+              <img
+                src="images/card4.jpg"
+                alt="Guaranteed modern home"
+                class="featuregrid_image"
+              />
+              <h3 class="featurecard_title">Guaranteed modern home</h3>
+            </div>
+            <div class="featuredesc_container">
+              <span class="featuredesc_1">$590,000</span>
+              <span class="featuredesc_2">Single Family Home</span>
+            </div>
+            <div class="featurecard_footer">
+              <span class="amenities1"> <i class="fa-solid fa-bed"></i> 4</span>
+              <span class="amenities2">
+                <i class="fa-solid fa-shower"></i> 2</span
+              >
+              <span class="amenities3">
+                <i class="fa-solid fa-car-side"></i> 1</span
+              >
+              <span class="amenities4">
+                <i class="fa-solid fa-pen-ruler"></i> 1200 msq.</span
+              >
+            </div>
+          </div>
+
+          <div class="featuregrid_content">
+            <div class="feature_image_container">
+              <img
+                src="images/card5.jpg"
+                alt="Contemporary apartment"
+                class="featuregrid_image"
+              />
+              <h3 class="featurecard_title">Contemporary apartment</h3>
+            </div>
+            <div class="featuredesc_container">
+              <span class="featuredesc_1">$3,600/mo</span>
+              <span class="featuredesc_2">Apartment</span>
+            </div>
+            <div class="featurecard_footer">
+              <span class="amenities1"> <i class="fa-solid fa-bed"></i> 4</span>
+              <span class="amenities2">
+                <i class="fa-solid fa-shower"></i> 2</span
+              >
+              <span class="amenities3">
+                <i class="fa-solid fa-car-side"></i> 1</span
+              >
+              <span class="amenities4">
+                <i class="fa-solid fa-pen-ruler"></i> 1200 msq.</span
+              >
+            </div>
+          </div>
+
+          <div class="featuregrid_content">
+            <div class="feature_image_container">
+              <img
+                src="images/card6.jpg"
+                alt="Renovated apartment"
+                class="featuregrid_image"
+              />
+              <h3 class="featurecard_title">Renovated apartment</h3>
+            </div>
+            <div class="featuredesc_container">
+              <span class="featuredesc_1">$540,000</span>
+              <span class="featuredesc_2">Apartment</span>
+            </div>
+            <div class="featurecard_footer">
+              <span class="amenities1"> <i class="fa-solid fa-bed"></i> 4</span>
+              <span class="amenities2">
+                <i class="fa-solid fa-shower"></i> 2</span
+              >
+              <span class="amenities3">
+                <i class="fa-solid fa-car-side"></i> 1</span
+              >
+              <span class="amenities4">
+                <i class="fa-solid fa-pen-ruler"></i> 1200 msq.</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="featurecardbutton">
+          <button class="belowcardfooter">Load More</button>
+        </div>
+      </section>
+
+      <section class="discoverSlider_section">
+        <div class="discoverslider_content">
+          <div class="slider">
+            <div class="one1">
+              <img src="images/slider1.webp" alt="slider 1" />
+            </div>
+            <div class="one1">
+              <img src="images/slider2.webp" alt="slider 2" />
+            </div>
+            <div class="one1">
+              <img src="images/slider3.webp" alt="slider 3" />
+            </div>
+          </div>
+        </div>
+        <div class="discoveroverlay_container">
+          <div class="discoveroverlay_box">
+            <h2 class="discoveroverlay_title">Discover Our finest Selection</h2>
+            <p class="discoveroverlay_desc">
+              Choose from different listing templates and lay them out as lists
+              or grids, full-width or boxed
+            </p>
+            <button class="discoveroverlay_button">Discover</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-md exploreneightbor_section">
+        <div class="exploreneightbor_container">
+          <div class="exploreneightbor_upper">
+            <h2 class="exploreneightbor_title">Explore The Neightborhood</h2>
+            <p class="exploreneightbor_desc">
+              THERE ARE DIFFERENT PROPERTY OPTIONS TO CHOOSE FROM, EACH SERVING
+              A PURPOSE TO HELP YOU BUILD A FINISHED SITE.
+            </p>
+          </div>
+
+          <div class="exploreneightbor_below">
+            <div class="exploreneightbor_bg">
+              <div class="image1">
+                <div class="exploreshadow_overlay">
+                  <div class="overlaytext_bg">
+                    <span class="bg_overlayexploredesc">10 Properties</span>
+                    <span class="bg_overlayexploretitle">New York</span>
+                  </div>
+                </div>
+              </div>
+              <div class="image2">
+                <div class="exploreshadow_overlay">
+                  <div class="overlaytext_bg">
+                    <span class="bg_overlayexploredesc">11 Properties</span>
+                    <span class="bg_overlayexploretitle"
+                      >Single Family Home</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="exploreneightbor_bg">
+              <div class="image3">
+                <div class="exploreshadow_overlay">
+                  <div class="overlaytext_bg">
+                    <span class="bg_overlayexploredesc">30 Properties</span>
+                    <span class="bg_overlayexploretitle">Apartments</span>
+                  </div>
+                </div>
+              </div>
+              <div class="image4">
+                <div class="exploreshadow_overlay">
+                  <div class="overlaytext_bg">
+                    <span class="bg_overlayexploredesc">10 Properties</span>
+                    <span class="bg_overlayexploretitle">Villa</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="exploreneightbor_bg">
+              <div class="image5">
+                <div class="exploreshadow_overlay">
+                  <div class="overlaytext_bg">
+                    <span class="bg_overlayexploredesc">15 Properties</span>
+                    <span class="bg_overlayexploretitle">Miami</span>
+                  </div>
+                </div>
+              </div>
+              <div class="image6">
+                <div class="exploreshadow_overlay">
+                  <div class="overlaytext_bg">
+                    <span class="bg_overlayexploredesc">14 Properties</span>
+                    <span class="bg_overlayexploretitle">Los Angeles</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="meet_our_agents">
+        <div class="meet_agents_content container">
+          <div class="title_agents">
+            <h2 class="title_agents_heading">Meet Our Agents</h2>
+            <p class="title_agents_desc">Choose from different listing templates and lay them out as lists or grids, full-width or boxed</p>
+          </div>
+          <!-- card1 -->
+           <div class="agentcards_container">
+            <div class="agents_content">
+              <img src="images/agent1.webp" alt="agent1" class="agent_image" />
+              <div class="agentcard_inform">
+                <a href="#" class="agent_anchor">Samuel Palmer</a>
+                <span class="agent_designation">Founder & CEO , Realty Properties Inc.</span>
+              </div>
+              <div class="agentdesc_card">
+                <p class="agentpresent_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex praesentium officia natus quisquam enim a minus ratione sed ea?</p>
+              </div>
+              <div class="agent_profile_button">
+                <a href="#" class="agent_anchor">View Profile</a>
+              </div>
+            </div>
+
+            <div class="agents_content">
+              <img src="images/agent2.webp" alt="agent2" class="agent_image" />
+              <div class="agentcard_inform">
+                <a href="#" class="agent_anchor">Vincent Fuller</a>
+                <span class="agent_designation">Company Agent , Cool Houses Inc.</span>
+              </div>
+              <div class="agentdesc_card">
+                <p class="agentpresent_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex praesentium officia natus quisquam enim a minus ratione sed ea?</p>
+              </div>
+              <div class="agent_profile_button">
+                <a href="#" class="agent_anchor">View Profile</a>
+              </div>
+            </div>
+
+            <div class="agents_content">
+              <img src="images/agent3.webp" alt="agent3" class="agent_image" />
+              <div class="agentcard_inform">
+                <a href="#" class="agent_anchor">Brittany Watkins</a>
+                <span class="agent_designation">Company Agent , Smart Houses Inc.</span>
+              </div>
+              <div class="agentdesc_card">
+                <p class="agentpresent_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex praesentium officia natus quisquam enim a minus ratione sed ea?</p>
+              </div>
+              <div class="agent_profile_button">
+                <a href="#" class="agent_anchor">View Profile</a>
+              </div>
+            </div>
+           </div>
+        </div>
+      </section>
+
+      <section class="our_services container">
+        <div class="our_services_content">
+          <div class="our_service_heading">
+            <h2>Our Services</h2>
+          </div>
+          <div class="our_service_context_grid">
+            <div class="our_service_context">
+              <div class="icon_service_divison">
+                <img src="images/service1.webp" alt="service property management" class="service_icon_image">
+              </div>
+              <div class="context_service_description">
+                <h3>Property Management</h3>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, cupiditate repellendus.</span>
+              </div>
+            </div>
+
+            <div class="our_service_context">
+              <div class="icon_service_divison">
+                <img src="images/service2.webp" alt="service Capital Improvements" class="service_icon_image">
+              </div>
+              <div class="context_service_description">
+                <h3>Capital Improvements</h3>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, cupiditate repellendus.</span>
+              </div>
+            </div>
+
+            <div class="our_service_context">
+              <div class="icon_service_divison">
+                <img src="images/service3.webp" alt="service Financial Reporting" class="service_icon_image">
+              </div>
+              <div class="context_service_description">
+                <h3>Financial Reporting</h3>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, cupiditate repellendus.</span>
+              </div>
+            </div>
+
+            <div class="our_service_context">
+              <div class="icon_service_divison">
+                <img src="images/service4.webp" alt="service Business Development" class="service_icon_image">
+              </div>
+              <div class="context_service_description">
+                <h3>Business Development</h3>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, cupiditate repellendus.</span>
+              </div>
+            </div>
+
+            <div class="our_service_context">
+              <div class="icon_service_divison">
+                <img src="images/service5.webp" alt="service Finance Real Estate" class="service_icon_image">
+              </div>
+              <div class="context_service_description">
+                <h3>Finance Real Estate</h3>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, cupiditate repellendus.</span>
+              </div>
+            </div>
+
+            <div class="our_service_context">
+              <div class="icon_service_divison">
+                <img src="images/service6.webp" alt="service Recover Asset Value" class="service_icon_image">
+              </div>
+              <div class="context_service_description">
+                <h3>Recover Asset Value</h3>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, cupiditate repellendus.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter_section container mt-4">
+       <div class="newsletter_content">
+        <div class="newsletter_title">
+          <h2>NEWSLETTER SIGN UP</h2>
+        </div>
+        <div class="newsletter_input">
+          <input type="text" placeholder="Enter your email" class="newsletter_input_field" />
+          <button class="newsletter_input_button">Submit</button>
+        </div>
+       </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer_context_grid container">
+        <div class="footer_container container">
+          <div class="footer_content_left">
+            <div class="footer_logo_container">
+              <img src="images/logo.svg" alt="houzezlogo" class="footer_logo_image" />
+              <h2 class="footer_logo_title">houzez</h2>
+            </div>
+            <div class="footer_logo_desc">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque reprehenderit dicta omnis aperiam adipisci beatae, temporibus dignissimos dolor esse asperiores, hic rerum molestias possimus. Laborum!</p>
+            </div>
+          </div>
+          <div class="footer_content_right">
+            <div class="footer_discover">
+              <h3>Discover</h3>
+            <ul class="footer_list">
+              <li class="footer_list_item"><a href="#">Miami</a></li>
+              <li class="footer_list_item"><a href="#">Los Angeles</a></li>
+              <li class="footer_list_item"><a href="#">Chicago</a></li>
+              <li class="footer_list_item"><a href="#">New York</a></li>
+            </div>
+  
+            <div class="footer_lifestyle">
+              <h3>Lifestyle</h3>
+            <ul class="footer_list">
+              <li class="footer_list_item"><a href="#">Apartment</a></li>
+              <li class="footer_list_item"><a href="#">Single Family Home</a></li>
+              <li class="footer_list_item"><a href="#">Villa</a></li>
+              <li class="footer_list_item"><a href="#">Loft</a></li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slider").slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
