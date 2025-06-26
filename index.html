@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Project-Housing Website</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link
@@ -76,6 +77,10 @@
                 <a class="nav-link" href="#">CONTACT</a>
               </li>
             </ul>
+            <ul class="icons m-0">
+              <li class="navbar-hamburger" onclick="openNav()"><a href="javascript:void(0)"><i class="bi bi-list"></i></a></li>
+              <li class="navbar-close" onclick="closeNav()"><a href="javascript:void(0)"><i class="bi bi-x"></i></a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -91,17 +96,20 @@
           >
             <h2 class="hero_title">Discover your place to live</h2>
             <p class="hero_desc p-2">Get started in few clicks</p>
-            <div class="hero_menus">
-              <button type="button" class="btn btn-dark all">All</button>
+            <div class="hero_single_button ">
+              <button class="hero_qotation_button">Get Quotation</button>
+            </div>
+            <!-- <div class="hero_menus">
+              button type="button" class="btn btn-dark all ">All</button> 
               <button type="button" class="btn btn-success one">
                 For Rent
               </button>
               <button type="button" class="btn btn-success one">
                 For Sale
               </button>
-            </div>
+            </div>-->
 
-            <div
+            <!-- <div
               class="hero_seachbar d-flex justify-content-center align-items-center p-3"
               data-aos="fade-zoom-in-up"
               data-aos-duration="2000"
@@ -130,13 +138,13 @@
               <button class="herosection_button_search" type="button">
                 Search
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
 
       <section
-        class="container-md d-flex flex-column align-items-center justify-content-center mt-5"
+        class="container-md d-flex flex-column align-items-center justify-content-center mt-5 our-featured-exclusives-section"
       >
         <div class="feature_heading">
           <h2 class="featureheading_title mb-4">Our Featured Exclusives</h2>
@@ -154,7 +162,7 @@
                 alt="Modern day apartment"
                 class="featuregrid_image"
               />
-              <h3 class="featurecard_title">Modern day apartment</h3>
+              <h3 class="featurecard_title">Modern Day Apartment</h3>
             </div>
             <div class="featuredesc_container">
               <span class="featuredesc_1">$3,750/mo</span>
@@ -235,7 +243,7 @@
                 alt="Guaranteed modern home"
                 class="featuregrid_image"
               />
-              <h3 class="featurecard_title">Guaranteed modern home</h3>
+              <h3 class="featurecard_title">Guaranteed Modern Home</h3>
             </div>
             <div class="featuredesc_container">
               <span class="featuredesc_1">$590,000</span>
@@ -262,7 +270,7 @@
                 alt="Contemporary apartment"
                 class="featuregrid_image"
               />
-              <h3 class="featurecard_title">Contemporary apartment</h3>
+              <h3 class="featurecard_title">Contemporary Apartment</h3>
             </div>
             <div class="featuredesc_container">
               <span class="featuredesc_1">$3,600/mo</span>
@@ -289,7 +297,7 @@
                 alt="Renovated apartment"
                 class="featuregrid_image"
               />
-              <h3 class="featurecard_title">Renovated apartment</h3>
+              <h3 class="featurecard_title">Renovated Apartment</h3>
             </div>
             <div class="featuredesc_container">
               <span class="featuredesc_1">$540,000</span>
@@ -327,8 +335,7 @@
               <img src="images/slider3.webp" alt="slider 3" />
             </div>
           </div>
-        </div>
-        <div class="discoveroverlay_container">
+          <div class="discoveroverlay_container">
           <div class="discoveroverlay_box">
             <h2 class="discoveroverlay_title">Discover Our finest Selection</h2>
             <p class="discoveroverlay_desc">
@@ -337,6 +344,7 @@
             </p>
             <button class="discoveroverlay_button">Discover</button>
           </div>
+        </div>
         </div>
       </section>
 
@@ -352,7 +360,7 @@
 
           <div class="exploreneightbor_below">
             <div class="exploreneightbor_bg">
-              <div class="image1">
+              <div class="image1 sml">
                 <div class="exploreshadow_overlay">
                   <div class="overlaytext_bg">
                     <span class="bg_overlayexploredesc">10 Properties</span>
@@ -360,7 +368,7 @@
                   </div>
                 </div>
               </div>
-              <div class="image2">
+              <div class="image2 big">
                 <div class="exploreshadow_overlay">
                   <div class="overlaytext_bg">
                     <span class="bg_overlayexploredesc">11 Properties</span>
@@ -373,7 +381,7 @@
             </div>
 
             <div class="exploreneightbor_bg">
-              <div class="image3">
+              <div class="image3 big">
                 <div class="exploreshadow_overlay">
                   <div class="overlaytext_bg">
                     <span class="bg_overlayexploredesc">30 Properties</span>
@@ -381,7 +389,7 @@
                   </div>
                 </div>
               </div>
-              <div class="image4">
+              <div class="image4 sml">
                 <div class="exploreshadow_overlay">
                   <div class="overlaytext_bg">
                     <span class="bg_overlayexploredesc">10 Properties</span>
@@ -392,7 +400,7 @@
             </div>
 
             <div class="exploreneightbor_bg">
-              <div class="image5">
+              <div class="image5 sml">
                 <div class="exploreshadow_overlay">
                   <div class="overlaytext_bg">
                     <span class="bg_overlayexploredesc">15 Properties</span>
@@ -400,7 +408,7 @@
                   </div>
                 </div>
               </div>
-              <div class="image6">
+              <div class="image6 big">
                 <div class="exploreshadow_overlay">
                   <div class="overlaytext_bg">
                     <span class="bg_overlayexploredesc">14 Properties</span>
@@ -466,8 +474,8 @@
         </div>
       </section>
 
-      <section class="our_services container">
-        <div class="our_services_content">
+      <section class="our_services">
+        <div class="our_services_content container">
           <div class="our_service_heading">
             <h2>Our Services</h2>
           </div>
@@ -535,8 +543,8 @@
         </div>
       </section>
 
-      <section class="newsletter_section container mt-4">
-       <div class="newsletter_content">
+      <section class="newsletter_section">
+       <div class="newsletter_content container ">
         <div class="newsletter_title">
           <h2>NEWSLETTER SIGN UP</h2>
         </div>
@@ -549,7 +557,7 @@
     </main>
 
     <footer>
-      <div class="footer_context_grid container">
+      <div class="footer_context_grid">
         <div class="footer_container container">
           <div class="footer_content_left">
             <div class="footer_logo_container">
@@ -602,9 +610,9 @@
         $(".slider").slick({
           dots: false,
           infinite: true,
-          speed: 300,
+          speed: 1000,
           autoplay: true,
-          autoplaySpeed: 2000,
+          autoplaySpeed: 1000,
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
@@ -638,6 +646,16 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      function openNav(){
+        document.querySelector(".nav_container .nav").style.display="block";
+        document.querySelector(".navbar-close").style.display="block";
+      }
+      function closeNav(){
+        document.querySelector(".navbar-close").style.display="none";
+        document.querySelector(".nav_container .nav").style.display="none";
+      }
     </script>
   </body>
 </html>
