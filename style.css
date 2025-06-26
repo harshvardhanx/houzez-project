@@ -47,6 +47,9 @@
 .nav-link{
     color: #000 !important;
 }
+.icons-header{
+    display: none;
+}
 .herosection_container{
     width: 100%;
     height: 100vh;
@@ -787,8 +790,8 @@ footer{
 .navbar-close{
     display: none;
     position: fixed;
-    top: 0px;
-    right: 5px;
+    top: 5px;
+    right: 10px;
     z-index: 12;
 }
 .navbar-close a i{
@@ -798,5 +801,8 @@ footer{
 .navbar-hamburger a i{
     color: #000;
     font-size: 1.5rem;
+}
+.icons-header{
+    display: block;
 }
 }
